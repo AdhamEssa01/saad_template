@@ -1,0 +1,371 @@
+/* start global rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: initial;
+}
+:root {
+    --main-color: #2c3e50;
+    --second-color: #1abc9c;
+    --third-color: #dc143c;
+}
+/* end global rules */
+/* start header */
+header .container {
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+    border-top: 1px solid var(--third-color);
+    z-index: 99;
+    position: fixed;
+    transition: all .5s;
+}
+header .container:hover {
+    border-top-color: var(--second-color);
+}
+header h2 {
+    color: white;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    transition: all 0.5s;
+    font-size: 18px;
+}
+header ul li a:hover {
+    color: var(--second-color);
+}
+/* end header */
+/* start carsour */
+.carsour {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/carsour.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.carsour .layout {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 33;
+}
+.carsour .text {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+.carsour .text h2 {
+    color: var(--main-color);
+    font-size: 2em
+}
+.carsour .text h2 span {
+    color: var(--third-color);
+}
+.carsour .text p {
+    color: white;
+}
+.carsour .text button {
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all 1s;
+}
+.carsour .text button:hover {
+    transform: scale(1.1);
+    background-color: var(--main-color)
+}
+/* end carsour */
+/* start services */
+.services {
+    width: 100vw;
+    padding: 30px 0;
+    text-align: center;
+}
+.services h2 {
+    color: var(--main-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.services .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services .card-container .card {
+    width: 23em;
+    margin: 15px;
+    box-shadow: 3px 3px 6px 6px #ccc;
+    padding: 30px;
+}
+.services .card-container .card i {
+    font-size: 50px;
+    color: var(--main-color);
+}
+.services .card-container .card h2 {
+    color: var(--third-color)
+}
+.services .card-container .card p {
+    line-height: 1.8;
+}
+/* end services */
+/* start portfolio */
+.portfolio {
+    background-color: var(--main-color);
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+.portfolio h2 {
+    color: white;
+    display: inline-block;
+    border-bottom: solid var(--third-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.portfolio .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio img {
+    width: 23em;
+}
+.portfolio .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .card-container .card {
+    width: 23em;
+    background-color: white;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 15px;
+}
+.portfolio .card-container .card .text {
+    padding: 20px;
+}
+.portfolio .card-container .card .text button {
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all 1s;
+}
+.portfolio .card-container .card .text button:hover {
+    transform: scale(1.1);
+    background-color: var(--main-color)
+}
+/* end portfolio */
+/* start notila */
+.notila {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.notila video {
+    width: 300px;  
+    margin-top: 70px;
+    margin-left: 25px;
+}
+.notila .image {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.404);
+    width: 350px;
+    height: 300px;
+}
+.notila .text {
+    text-align: center;
+    width: 60%;;
+}
+.notila .text h2 {
+    color: var(--third-color);
+    font-size: 2em
+}
+/* end notila */
+/* start about */
+.about {
+    background-image: url(../image/about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;align-items: center;
+    text-align: center
+}
+.about h2 {
+    color: var(--main-color);
+    font-size: 2em;
+    width: fit-content;
+    margin: 20px auto;
+    border-bottom: 3px solid var(--third-color);
+}
+.about .image {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 25px;
+    border: solid white;
+}
+.about img {
+    width: 470px;
+    margin-left: -76px;
+}
+/* end about */
+/* start footer */
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+}
+/* start footer */
+/* start scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--third-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--second-color); 
+  }
+/* end scroll */
+/* start up angl */
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--third-color);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    transition: all .5s;
+}
+.up:hover {
+    background-color: var(--second-color);
+}
+/* end up angl */
+/* start contact */
+.contact {
+    background: rgb(72,167,201);
+background: linear-gradient(0deg, rgba(72,167,201,1)        41%, rgba(3,199,238,1) 68%);
+    padding: 100px;
+}
+.contact h2 {
+    color: white;
+    width: fit-content;
+    font-size: 2em;
+    border-bottom: 3px solid white;
+    margin: 40px auto;
+}
+.contact .container {
+    width: 80%;
+    margin: 5px auto;
+}
+.contact .container .input-form {
+    position: relative;
+    width: 100%;
+}
+.contact .container label {
+    position: absolute;
+    left: 5px;
+    font-size: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: all .5s;
+    pointer-events: none;
+}
+.contact .container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;  
+    margin-bottom: 20px;
+    height: 40px;
+}
+.contact .container input:hover~label,
+.contact .container input:valid~label {
+    top: 13%;
+    transform: translateY(-40%);
+    margin-bottom:3px;
+}
+.contact .container .send {
+    color: white;
+    background-color: var(--main-color);
+    padding: 5px 20px;
+    border: none;
+    margin: 10px auto;
+    width: fit-content;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.contact .container .send:hover {
+    background-color: var(--third-color);
+    transform: scale(1.1);
+}
+/* end contact */
+/* start map */
+.map {
+    padding: 100px;
+    text-align: center;
+}
+.mpa div {
+    width: 100% !important;
+    padding: 20px;
+}
+.mpa div iframe {
+    width: 100% !important;
+}
+/* end map */
